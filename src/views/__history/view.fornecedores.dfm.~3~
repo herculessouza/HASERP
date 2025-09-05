@@ -1,0 +1,101 @@
+inherited viewFornecedores: TviewFornecedores
+  Caption = 'viewFornecedores'
+  StyleElements = [seFont, seClient, seBorder]
+  ExplicitLeft = -10
+  TextHeight = 15
+  inherited topo: TPanel
+    StyleElements = [seFont, seClient, seBorder]
+    inherited titulo: TLabel
+      StyleElements = [seFont, seClient, seBorder]
+    end
+    inherited icone: TPanel
+      StyleElements = [seFont, seClient, seBorder]
+    end
+    inherited pnlFechar: TPanel
+      StyleElements = [seFont, seClient, seBorder]
+    end
+  end
+  inherited rodape: TPanel
+    StyleElements = [seFont, seClient, seBorder]
+  end
+  inherited pnlLinhadeFundo: TPanel
+    StyleElements = [seFont, seClient, seBorder]
+    inherited CPLista: TCardPanel
+      StyleElements = [seFont, seClient, seBorder]
+      inherited card_Cadastro: TCard
+        StyleElements = [seFont, seClient, seBorder]
+      end
+      inherited card_Pesquisa: TCard
+        StyleElements = [seFont, seClient, seBorder]
+        inherited pnltituloPesquisa: TPanel
+          StyleElements = [seFont, seClient, seBorder]
+          inherited lblTituloPesquisa: TLabel
+            StyleElements = [seFont, seClient, seBorder]
+          end
+          inherited edtPesquisa: TSearchBox
+            StyleElements = [seFont, seClient, seBorder]
+          end
+        end
+        inherited DBG_: TDBGrid
+          Columns = <
+            item
+              Expanded = False
+              FieldName = 'C'#243'digo'
+              Width = 24
+              Visible = True
+            end
+            item
+              Expanded = False
+              FieldName = 'Raz'#227'o Social'
+              Width = 116
+              Visible = True
+            end
+            item
+              Expanded = False
+              FieldName = 'Nome Fantasia'
+              Width = 135
+              Visible = True
+            end
+            item
+              Expanded = False
+              FieldName = 'Telefone'
+              Width = 100
+              Visible = True
+            end
+            item
+              Expanded = False
+              FieldName = 'Endere'#231'o'
+              Width = 97
+              Visible = True
+            end
+            item
+              Expanded = False
+              FieldName = 'Tipo'
+              Width = 32
+              Visible = True
+            end
+            item
+              Expanded = False
+              FieldName = 'CNPJ'
+              Width = 115
+              Visible = True
+            end
+            item
+              Expanded = False
+              FieldName = 'IE'
+              Width = 111
+              Visible = True
+            end
+            item
+              Expanded = False
+              FieldName = 'PES_OBSERVACAO'
+              Visible = True
+            end>
+        end
+      end
+    end
+  end
+  inherited dsDados: TDataSource
+    DataSet = ServicesCadastro.Qry_Pessoas
+  end
+end

@@ -1,0 +1,67 @@
+unit Services.cadastro;
+
+interface
+
+uses
+  System.SysUtils,
+  System.Classes,
+  Services.conexao,
+  FireDAC.Stan.Intf,
+  FireDAC.Stan.Option,
+  FireDAC.Stan.Param,
+  FireDAC.Stan.Error,
+  FireDAC.DatS,
+  FireDAC.Phys.Intf,
+  FireDAC.DApt.Intf,
+  FireDAC.Stan.Async,
+  FireDAC.DApt,
+  Data.DB,
+  FireDAC.Comp.DataSet,
+  FireDAC.Comp.Client;
+
+type
+  TServicesCadastro = class(TDataModule)
+    Qry_Pessoas: TFDQuery;
+    Qry_PessoasPES_CODIGO: TIntegerField;
+    Qry_PessoasPES_RAZAO: TStringField;
+    Qry_PessoasPES_FANTASIA: TStringField;
+    Qry_PessoasPES_TELEFONE: TStringField;
+    Qry_PessoasPES_ENDERECO: TStringField;
+    Qry_PessoasPES_TIPOPESSOA: TIntegerField;
+    Qry_PessoasPES_CPFCNPJ: TStringField;
+    Qry_PessoasPES_IERG: TStringField;
+    Qry_PessoasPES_OBSERVACAO: TStringField;
+    qry_Enderecos: TFDQuery;
+    qry_EnderecosEND_CODIGO: TIntegerField;
+    qry_EnderecosEND_PESSOA: TIntegerField;
+    qry_EnderecosEND_CEP: TStringField;
+    qry_EnderecosEND_CIDADE: TStringField;
+    qry_EnderecosEND_ENDERECO: TStringField;
+    qry_EnderecosEND_BAIRRO: TStringField;
+    qry_EnderecosEND_OBSERVACAO: TStringField;
+    qry_EnderecosEND_NUMERO: TStringField;
+    qry_produto1: TFDQuery;
+    qry_produto2: TFDQuery;
+    qry_produto1PR1_CODIGO: TStringField;
+    qry_produto1PR1_NOMECOMPLETO: TStringField;
+    qry_produto1PR1_NOMEPOPULAR: TStringField;
+    qry_produto1PR1_CODBAR: TStringField;
+    qry_produto1PR1_REFERENCIA: TStringField;
+    qry_produto1GRUPO: TIntegerField;
+    qry_produto1SUBGRUPO: TIntegerField;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  ServicesCadastro: TServicesCadastro;
+
+implementation
+
+{%CLASSGROUP 'Vcl.Controls.TControl'}
+
+{$R *.dfm}
+
+end.

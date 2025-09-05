@@ -1,0 +1,108 @@
+unit view.clientes;
+
+interface
+
+uses
+  Winapi.Windows,
+  Winapi.Messages,
+  System.SysUtils,
+  System.Variants,
+  System.Classes,
+  Vcl.Graphics,
+  Vcl.Controls,
+  Vcl.Forms,
+  Vcl.Dialogs,
+  view.base.listas,
+  Data.DB,
+  Vcl.Grids,
+  Vcl.DBGrids,
+  Vcl.StdCtrls,
+  Vcl.WinXCtrls,
+  Vcl.WinXPanels,
+  Vcl.Buttons,
+  Vcl.ExtCtrls,
+  Services.cadastro, Vcl.Mask, Vcl.DBCtrls, providers.constantes;
+
+type
+  TviewClientes = class(TviewBaseListas)
+    pnlTituloCadCliente: TPanel;
+    lblTituloCadastro: TLabel;
+    Label1: TLabel;
+    edtPES_COD: TDBEdit;
+    Label2: TLabel;
+    edtPES_RAZAO: TDBEdit;
+    Label3: TLabel;
+    edtPES_FANTASIA: TDBEdit;
+    Label4: TLabel;
+    edtPES_TELEFONE: TDBEdit;
+    Label5: TLabel;
+    edtPES_CPFCNPJ: TDBEdit;
+    Label6: TLabel;
+    edtPES_IERG: TDBEdit;
+    Label8: TLabel;
+    edtPES_OBSERVACAO: TDBEdit;
+    procedure FormShow(Sender: TObject);
+    procedure btnNovoClick(Sender: TObject);
+    procedure btnSalvarClick(Sender: TObject);
+    procedure btnCancelarClick(Sender: TObject);
+    procedure btnExcluirClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+
+  end;
+
+var
+  viewClientes: TviewClientes;
+
+implementation
+
+{$R *.dfm}
+
+procedure TviewClientes.btnCancelarClick(Sender: TObject);
+begin           //cancelar
+  inherited;
+  if ServicesCadastro.Qry_Pessoas.State in dsEditModes then
+     ServicesCadastro.Qry_Pessoas.Cancel;
+     CPLista.ActiveCard  := card_Pesquisa;
+
+end;
+
+procedure TviewClientes.btnExcluirClick(Sender: TObject);
+begin         //excluir
+  inherited;
+
+  if ServicesCadastro.Qry_Pessoas.RecordCount > 0 then
+ begin
+     ServicesCadastro.Qry_Pessoas.Delete;
+     ShowMessage('Cliente Deletado com Sucesso');
+     CPLista.ActiveCard := card_pesquisa;
+ end;
+end;
+
+procedure TviewClientes.btnNovoClick(Sender: TObject);
+begin         //novo
+  inherited;
+     
+end;
+
+procedure TviewClientes.btnSalvarClick(Sender: TObject);
+begin         //salvar
+  inherited;
+  if ServicesCadastro.Qry_Pessoas.State in dsEditModes then
+  begin
+  ServicesCadastro.Qry_PessoasPES_TIPOPESSOA.AsInteger := 1;
+  ServicesCadastro.Qry_Pessoas.Post;
+  showmessage('Cliente Salvo com Sucesso');
+  CPLista.ActiveCard := card_Pesquisa;
+  end;
+end;
+procedure TviewClientes.FormShow(Sender: TObject);
+begin
+  inherited;
+        GET_Pessoas(1);
+end;
+
+
+end.

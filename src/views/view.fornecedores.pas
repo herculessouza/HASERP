@@ -1,0 +1,63 @@
+unit view.fornecedores;
+
+interface
+
+uses
+  Winapi.Windows,
+   Winapi.Messages,
+    System.SysUtils,
+     System.Variants,
+      System.Classes,
+       Vcl.Graphics,
+  Vcl.Controls,
+  Vcl.Forms,
+  Vcl.Dialogs,
+  view.base.listas,
+  Data.DB,
+  Vcl.Grids,
+  Vcl.DBGrids,
+   Vcl.StdCtrls,
+    Vcl.WinXCtrls,
+    Vcl.WinXPanels,
+     Vcl.Buttons,
+  Vcl.ExtCtrls, Services.cadastro, providers.constantes, Vcl.Mask, Vcl.DBCtrls;
+
+type
+  TviewFornecedores = class(TviewBaseListas)
+    Label1: TLabel;
+    Label2: TLabel;
+    Label3: TLabel;
+    Label4: TLabel;
+    Label5: TLabel;
+    Label6: TLabel;
+    Label8: TLabel;
+    pnlTituloCadCliente: TPanel;
+    lblTituloCadastro: TLabel;
+    edtPES_COD: TDBEdit;
+    edtPES_RAZAO: TDBEdit;
+    edtPES_FANTASIA: TDBEdit;
+    edtPES_TELEFONE: TDBEdit;
+    edtPES_CPFCNPJ: TDBEdit;
+    edtPES_IERG: TDBEdit;
+    edtPES_OBSERVACAO: TDBEdit;
+    procedure FormShow(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  viewFornecedores: TviewFornecedores;
+
+implementation
+
+{$R *.dfm}
+
+procedure TviewFornecedores.FormShow(Sender: TObject);
+begin      //show
+  inherited;
+      GET_pessoas(2);
+end;
+
+end.

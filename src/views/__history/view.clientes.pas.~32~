@@ -1,0 +1,86 @@
+unit view.clientes;
+
+interface
+
+uses
+  Winapi.Windows,
+  Winapi.Messages,
+  System.SysUtils,
+  System.Variants,
+  System.Classes,
+  Vcl.Graphics,
+  Vcl.Controls,
+  Vcl.Forms,
+  Vcl.Dialogs,
+  Data.DB,
+  Vcl.Grids,
+  Vcl.DBGrids,
+  Vcl.StdCtrls,
+  Vcl.WinXCtrls,
+  Vcl.WinXPanels,
+  Vcl.Buttons,
+  Vcl.ExtCtrls,
+  Services.cadastro, Vcl.Mask, Vcl.DBCtrls, providers.constantes,
+  view.base.listas;
+
+type
+  TviewClientes = class(TviewBaseListas)
+    pnlTituloCadCliente: TPanel;
+    lblTituloCadastro: TLabel;
+    Label1: TLabel;
+    PES_COD: TDBEdit;
+    Label2: TLabel;
+    edtPES_RAZAO: TDBEdit;
+    Label3: TLabel;
+    edtPES_FANTASIA: TDBEdit;
+    Label4: TLabel;
+    edtPES_TELEFONE: TDBEdit;
+    Label5: TLabel;
+    edtPES_CPFCNPJ: TDBEdit;
+    Label6: TLabel;
+    edtPES_IERG: TDBEdit;
+    Label8: TLabel;
+    edtPES_OBSERVACAO: TDBEdit;
+    procedure btnNovoClick(Sender: TObject);
+    procedure btnSalvarClick(Sender: TObject);
+    procedure btnCancelarClick(Sender: TObject);
+    procedure btnExcluirClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+
+  end;
+
+var
+  viewClientes: TviewClientes;
+
+implementation
+
+{$R *.dfm}
+
+procedure TviewClientes.btnCancelarClick(Sender: TObject);
+begin           //cancelar
+  inherited;
+ 
+
+end;
+
+procedure TviewClientes.btnExcluirClick(Sender: TObject);
+begin         //excluir
+  inherited;
+
+end;
+
+procedure TviewClientes.btnNovoClick(Sender: TObject);
+begin         //novo
+  inherited;
+     
+end;
+
+procedure TviewClientes.btnSalvarClick(Sender: TObject);
+begin         //salvar
+  inherited;
+  
+end;
+end.

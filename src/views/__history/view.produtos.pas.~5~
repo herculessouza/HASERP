@@ -1,0 +1,34 @@
+unit view.produtos;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Data.DB, Vcl.Grids,
+  Vcl.DBGrids, Vcl.StdCtrls, Vcl.WinXCtrls, Vcl.WinXPanels, Vcl.Buttons,
+  Vcl.ExtCtrls, Services.cadastro, providers.constantes, view.base.listas;
+
+type
+  TviewProdutos = class(TviewBaseListas)
+    dsProdutos2: TDataSource;
+    procedure FormShow(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  viewProdutos: TviewProdutos;
+
+implementation
+
+{$R *.dfm}
+
+procedure TviewProdutos.FormShow(Sender: TObject);
+begin
+  inherited;
+          get_produtos;
+end;
+
+end.

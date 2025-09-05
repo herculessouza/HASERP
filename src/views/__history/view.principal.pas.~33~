@@ -1,0 +1,143 @@
+unit view.principal;
+
+interface
+
+uses
+  Winapi.Windows,
+  Winapi.Messages,
+  System.SysUtils,
+  System.Variants,
+  System.Classes,
+  Vcl.Graphics,
+  Vcl.Controls,
+  Vcl.Forms,
+  Vcl.Dialogs, Vcl.StdCtrls, Vcl.Buttons, Vcl.ExtCtrls, Vcl.Skia,
+  Vcl.Imaging.pngimage, System.Actions, Vcl.ActnList, System.ImageList,
+  Vcl.ImgList;
+
+type
+  TViewPrincipal = class(TForm)
+    pnlTopo: TPanel;
+    pnlMenu: TPanel;
+    pnlBackgroundPrincipal: TPanel;
+    pnlRodape: TPanel;
+    pnlConteudo: TPanel;
+    pnlLogo: TPanel;
+    pnlLogoTop: TPanel;
+    pnlConteudoLogo: TPanel;
+    lblTituloEmpresa: TLabel;
+    lblEmpresa: TLabel;
+    pnlVersao: TPanel;
+    lblTitulo: TLabel;
+    pnlVersaoRodape: TLabel;
+    pnlUsuario: TPanel;
+    pnlImageUsuario: TPanel;
+    ImageUsuario: TImage;
+    dadosUsuario: TPanel;
+    lblUsuario: TLabel;
+    lblPerfil: TLabel;
+    pnlLicenciado: TPanel;
+    pnlLineRodape: TPanel;
+    pnlConteudoLicensa: TPanel;
+    lblLicenciada: TLabel;
+    lblLicensaEmpresa: TLabel;
+    pnlSair: TPanel;
+    pnlShapeMenu: TPanel;
+    ShapeMenu: TShape;
+    pnlDadosMenu: TPanel;
+    btnProdutos: TSpeedButton;
+    btnFornecedores: TSpeedButton;
+    btnCaixa: TSpeedButton;
+    btnCliente: TSpeedButton;
+    btnConfig: TSpeedButton;
+    btnSair: TSpeedButton;
+    imgBackground: TImage;
+    pnlLineDados: TPanel;
+    ActionList1: TActionList;
+    act_Clientes: TAction;
+    act_Caixa: TAction;
+    act_Fornec: TAction;
+    act_Produtos: TAction;
+    act_config: TAction;
+    ImageList36: TImageList;
+    procedure btnSairClick(Sender: TObject);
+    procedure btnClienteClick(Sender: TObject);
+    procedure btnCaixaClick(Sender: TObject);
+    procedure btnFornecedoresClick(Sender: TObject);
+    procedure btnProdutosClick(Sender: TObject);
+    procedure btnConfigClick(Sender: TObject);
+    procedure formShow(Sender: TObject);
+    procedure lblTituloEmpresaMouseEnter(Sender: TObject);
+    procedure lblTituloEmpresaMouseLeave(Sender: TObject);
+  private
+    procedure GET_lineMenu(Sender: TObject);
+  public
+    { Public declarations }
+  end;
+
+var
+  ViewPrincipal: TViewPrincipal;
+
+implementation
+
+{$R *.dfm}
+
+
+procedure TViewPrincipal.btnCaixaClick(Sender: TObject);
+begin
+ GET_lineMenu(Sender);
+end;
+
+procedure TViewPrincipal.btnClienteClick(Sender: TObject);
+begin
+ GET_lineMenu(Sender);
+end;
+
+procedure TViewPrincipal.btnConfigClick(Sender: TObject);
+begin
+ GET_lineMenu(Sender);
+end;
+
+procedure TViewPrincipal.btnFornecedoresClick(Sender: TObject);
+begin
+ GET_lineMenu(Sender);
+end;
+
+procedure TViewPrincipal.btnProdutosClick(Sender: TObject);
+begin
+ GET_lineMenu(Sender);
+end;
+
+procedure TViewPrincipal.btnSairClick(Sender: TObject);
+begin
+begin
+  application.Terminate;
+end;
+
+end;
+
+procedure TViewPrincipal.formShow(Sender: TObject);
+begin
+                 GET_lineMenu(btnCliente);
+end;
+
+procedure TViewPrincipal.GET_lineMenu(Sender: TObject);
+begin
+ShapeMenu.left    := 0;
+ShapeMenu.Top     :=0;
+ShapeMenu.Height  := TSpeedButton(Sender).Height;
+ShapeMenu.Top     := TSpeedButton(Sender).top;
+pnlShapeMenu.Repaint;
+end;
+
+procedure TViewPrincipal.lblTituloEmpresaMouseEnter(Sender: TObject);
+begin
+      lblTituloEmpresa.Font.Color := $000FBBD9 ;
+end;
+
+procedure TViewPrincipal.lblTituloEmpresaMouseLeave(Sender: TObject);
+begin
+  lblTituloEmpresa.Font.Color := clWhite;
+end;
+
+end.

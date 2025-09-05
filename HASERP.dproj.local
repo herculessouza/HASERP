@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2025/08/30 10:26:20.000.307,=C:\Users\bleed\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2025/08/30 12:28:45.000.189,=C:\Users\bleed\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2025/08/30 12:39:34.000.223,C:\Users\bleed\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit2.pas=C:\Users\bleed\OneDrive\Documentos\cursos\delphi\projetoERP\src\views\view.principal.pas</Transaction>
+    <Transaction>2025/08/30 12:39:34.000.223,C:\Users\bleed\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit2.dfm=C:\Users\bleed\OneDrive\Documentos\cursos\delphi\projetoERP\src\views\view.principal.dfm</Transaction>
+    <Transaction>2025/08/30 12:41:38.000.261,C:\Users\bleed\OneDrive\Documentos\Embarcadero\Studio\Projects\Project2.dproj=C:\Users\bleed\OneDrive\Documentos\cursos\delphi\projetoERP\HASERP.dproj</Transaction>
+    <Transaction>2025/09/01 07:22:51.000.437,=C:\Users\bleed\OneDrive\Documentos\cursos\delphi\projetoERP\Unit1.pas</Transaction>
+    <Transaction>2025/09/01 07:23:40.000.631,C:\Users\bleed\OneDrive\Documentos\cursos\delphi\projetoERP\Unit1.pas=C:\Users\bleed\OneDrive\Documentos\cursos\delphi\projetoERP\src\services\Services.conexao.pas</Transaction>
+    <Transaction>2025/09/01 07:23:40.000.631,C:\Users\bleed\OneDrive\Documentos\cursos\delphi\projetoERP\Unit1.dfm=C:\Users\bleed\OneDrive\Documentos\cursos\delphi\projetoERP\src\services\Services.conexao.dfm</Transaction>
+    <Transaction>2025/09/01 07:56:37.000.715,=C:\Users\bleed\OneDrive\Documentos\cursos\delphi\projetoERP\Unit1.pas</Transaction>
+    <Transaction>2025/09/01 07:57:00.000.644,C:\Users\bleed\OneDrive\Documentos\cursos\delphi\projetoERP\Unit1.dfm=C:\Users\bleed\OneDrive\Documentos\cursos\delphi\projetoERP\src\services\Services.cadastro.dfm</Transaction>
+    <Transaction>2025/09/01 07:57:00.000.644,C:\Users\bleed\OneDrive\Documentos\cursos\delphi\projetoERP\Unit1.pas=C:\Users\bleed\OneDrive\Documentos\cursos\delphi\projetoERP\src\services\Services.cadastro.pas</Transaction>
+    <Transaction>2025/09/01 08:11:20.000.152,=C:\Users\bleed\OneDrive\Documentos\cursos\delphi\projetoERP\Unit1.pas</Transaction>
+    <Transaction>2025/09/01 08:11:45.000.057,C:\Users\bleed\OneDrive\Documentos\cursos\delphi\projetoERP\Unit1.pas=C:\Users\bleed\OneDrive\Documentos\cursos\delphi\projetoERP\src\providers\providers.constantes.pas</Transaction>
+    <Transaction>2025/09/01 08:23:50.000.647,=C:\Users\bleed\OneDrive\Documentos\cursos\delphi\projetoERP\Unit1.pas</Transaction>
+    <Transaction>2025/09/01 08:24:12.000.776,C:\Users\bleed\OneDrive\Documentos\cursos\delphi\projetoERP\Unit1.dfm=C:\Users\bleed\OneDrive\Documentos\cursos\delphi\projetoERP\src\views\view.base.dfm</Transaction>
+    <Transaction>2025/09/01 08:24:12.000.776,C:\Users\bleed\OneDrive\Documentos\cursos\delphi\projetoERP\Unit1.pas=C:\Users\bleed\OneDrive\Documentos\cursos\delphi\projetoERP\src\views\view.base.pas</Transaction>
+    <Transaction>2025/09/01 08:39:17.000.032,=C:\Users\bleed\OneDrive\Documentos\cursos\delphi\projetoERP\Unit1.pas</Transaction>
+    <Transaction>2025/09/01 08:39:51.000.367,C:\Users\bleed\OneDrive\Documentos\cursos\delphi\projetoERP\Unit1.dfm=C:\Users\bleed\OneDrive\Documentos\cursos\delphi\projetoERP\src\views\view.base.listas.dfm</Transaction>
+    <Transaction>2025/09/01 08:39:51.000.367,C:\Users\bleed\OneDrive\Documentos\cursos\delphi\projetoERP\Unit1.pas=C:\Users\bleed\OneDrive\Documentos\cursos\delphi\projetoERP\src\views\view.base.listas.pas</Transaction>
+    <Transaction>2025/09/01 09:43:25.000.936,=C:\Users\bleed\OneDrive\Documentos\cursos\delphi\projetoERP\Unit1.pas</Transaction>
+    <Transaction>2025/09/01 09:43:50.000.070,C:\Users\bleed\OneDrive\Documentos\cursos\delphi\projetoERP\Unit1.pas=C:\Users\bleed\OneDrive\Documentos\cursos\delphi\projetoERP\src\views\view.clientes.pas</Transaction>
+    <Transaction>2025/09/01 09:43:50.000.070,C:\Users\bleed\OneDrive\Documentos\cursos\delphi\projetoERP\Unit1.dfm=C:\Users\bleed\OneDrive\Documentos\cursos\delphi\projetoERP\src\views\view.clientes.dfm</Transaction>
+    <Transaction>2025/09/02 07:20:36.000.205,=C:\Users\bleed\OneDrive\Documentos\cursos\delphi\projetoERP\Unit1.pas</Transaction>
+    <Transaction>2025/09/02 07:20:51.000.420,C:\Users\bleed\OneDrive\Documentos\cursos\delphi\projetoERP\Unit1.pas=C:\Users\bleed\OneDrive\Documentos\cursos\delphi\projetoERP\src\views\view.fornecedores.pas</Transaction>
+    <Transaction>2025/09/02 07:20:51.000.420,C:\Users\bleed\OneDrive\Documentos\cursos\delphi\projetoERP\Unit1.dfm=C:\Users\bleed\OneDrive\Documentos\cursos\delphi\projetoERP\src\views\view.fornecedores.dfm</Transaction>
+    <Transaction>2025/09/02 08:36:55.000.962,=C:\Users\bleed\OneDrive\Documentos\cursos\delphi\projetoERP\Unit1.pas</Transaction>
+    <Transaction>2025/09/02 08:37:18.000.247,C:\Users\bleed\OneDrive\Documentos\cursos\delphi\projetoERP\Unit1.pas=C:\Users\bleed\OneDrive\Documentos\cursos\delphi\projetoERP\src\providers\provider.Conversao.pas</Transaction>
+    <Transaction>2025/09/03 08:24:18.000.255,=C:\Users\bleed\OneDrive\Documentos\cursos\delphi\projetoERP\Unit1.pas</Transaction>
+    <Transaction>2025/09/03 08:39:00.000.291,C:\Users\bleed\OneDrive\Documentos\cursos\delphi\projetoERP\src\views\view.produtos.pas=C:\Users\bleed\OneDrive\Documentos\cursos\delphi\projetoERP\Unit1.pas</Transaction>
+    <Transaction>2025/09/03 08:39:00.000.291,C:\Users\bleed\OneDrive\Documentos\cursos\delphi\projetoERP\src\views\view.produtos.dfm=C:\Users\bleed\OneDrive\Documentos\cursos\delphi\projetoERP\Unit1.dfm</Transaction>
+  </Transactions>
+</BorlandProject>
